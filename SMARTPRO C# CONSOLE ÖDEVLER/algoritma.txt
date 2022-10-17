@@ -1,0 +1,81 @@
+Bir öğrencinin klavyeden girilen iki notunun ortalamasını hesaplayan
+ve çıkan sonuca göre notun iyi veya kötü olduğunu ekrana yazdıran
+programın algoritması(ort >70 ise iyi, küçükse kötü)
+
+Başla
+1. Notu gir
+2. Notu gir
+ortalama=(not1+not2)/2
+eğer ortalama>70 ise yaz İYİ
+eğer ortalama<70 ise yaz Kötü
+Bitir
+
+Girilen vize ve final notlarına göre öğrencinin dersten geçip 
+geçmediğini bulan algoritma ve akış diyagramını tasarlayınız.
+
+Başla
+vize notunu gir
+final notunu gir
+ortalama=vize*0.40 + final*060
+eğer ortalama>=60 ise
+öğrenci dersten geçti
+değilse
+öğrenci dersten kaldı.
+Bitir
+
+Verilen tamsayının sıfır, pozitif ya da negatif olup olmadığını 
+bulan algoritma ve akış diyagramını tasarlayınız.
+
+Başla
+sayı gir
+eğer sayı<0 ise SAYI NEGATİFTİR
+eğer sayı=0 ise SAYI SIFIRDIR
+eğer sayı>0 ise SAYI POZİTİFTİR
+
+Beş sayının toplamını ve ortalamasını veren programa ait algoritmayı
+oluşturunuz.
+
+Başla 
+sayac=0, toplam=0, sayı, ortalama
+sayac<6 ise
+sayı gir
+sayac=sayac+1
+toplam=toplam+sayı
+ortalama=toplam/5
+toplamı yazdır
+ortalamayı yazdır
+bitir
+
+
+Klavyeden girilen 10 adet sayının toplamını bulup ekrana yazan
+programın algoritmasını yazın
+
+Başla
+sayac=0, toplam=0
+sayı gir
+toplam=toplam+sayı
+sayac=sayac+1
+eğer sayac<10 ise 3. adıma git
+toplamı yaz
+bitir
+
+
+
+
+
+Klavyeden kısa ve uzun kenarı girilen
+dikdörtgenin alanını hesaplayıp ekrana yazan
+programın algoritmasını yazın
+
+Başla
+kısa kenar, uzun kenar,alan
+alan=kısakenar*uzunkenar
+alanı yaz
+bitir
+
+
+
+
+
+
+

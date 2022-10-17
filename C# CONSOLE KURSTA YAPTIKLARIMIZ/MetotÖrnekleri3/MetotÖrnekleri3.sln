@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetotÖrnekleri3", "MetotÖrnekleri3\MetotÖrnekleri3.csproj", "{ABF764BF-7B38-480D-97BD-9015BE521D3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABF764BF-7B38-480D-97BD-9015BE521D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF764BF-7B38-480D-97BD-9015BE521D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF764BF-7B38-480D-97BD-9015BE521D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF764BF-7B38-480D-97BD-9015BE521D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A45904C3-279E-442B-BA60-BE2D7DA87350}
+	EndGlobalSection
+EndGlobal

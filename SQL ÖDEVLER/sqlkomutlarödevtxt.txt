@@ -1,0 +1,20 @@
+1- Kategori ıd si 5 olan ürün bedeli 20 den büyük 300 den küçük olan ve stok durumu null olmayan ürünlerin detaylarını gösterin 
+
+select prd.CategoryID,  prd.ProductName, prd.UnitPrice, prd.UnitsInStock from Products 
+where CategoryID = 5 and UnitPrice > 20 and UnitPrice < 300 and UnitsInStock Is not null
+
+2-DUMON ya da  ALFKI customer ıd lerine sahip olan müşteriler tarafından alınmış bir nolu personelin onayladığı 3 nolu kargo firması tarafından taşınmış ve null olmayan siparişleri gösteriniz.
+
+select * from Orders where CustomerID='DUMON' or CustomerID='ALFKI' and EmployeeID=1 and ShipVia = 3 and ShipRegion is not null
+
+3- fiyatı 50 den büyük olan ürünlerden satış adeti en fazla olan 10 ürünü listeleyiniz ve eşit olan varsa hepsini göstersin bunda başka olay var.(with ties)
+
+select top 10 with TIES * from [Order Details] where UnitPrice>50 order by  Quantity desc
+
+4- Baş harfi C olan stoklarda mevcut 10 ile 250 dolar arası ücreti olan ürünleri fiyatlarına göre listeleyiniz 
+
+select * from Products Where UnitPrice Between 10 and 75 and UnitsInStock != '0' and ProductName like'C%' order by UnitPrice 
+
+5- çarşamba günü alınan kargo ücreti 20 ile 75 arasında olan teslim tarihi null olmayan siparişlerin bilgilerini raporlayınız ve order ıdsine göre büyükten küçüğe sıralayınız
+
+select *from Orders where OrderDate between '01.01.1997' and '06.06.1998' order by OrderDate 

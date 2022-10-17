@@ -1,0 +1,13 @@
+* Id istediğimiz yerden başlatma komutu;
+
+DBCC CHECKIDENT (‘tablo adı’,RESEED, başlatılacak ID)
+
+burada girilecek verinin id si 1den baslaması isteniyor ise komut;
+
+DBCC CHECKIDENT (‘tablo adı’,RESEED,0)
+
+örneğin 11’den başlatılmak isteniyorsak;
+
+DBCC CHECKIDENT (‘tablo adı’,RESEED,10)
+
+

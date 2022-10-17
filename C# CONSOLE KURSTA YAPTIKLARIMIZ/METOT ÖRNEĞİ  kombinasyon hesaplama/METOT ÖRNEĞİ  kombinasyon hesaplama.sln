@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "METOT ÖRNEĞİ  kombinasyon hesaplama", "METOT ÖRNEĞİ  kombinasyon hesaplama\METOT ÖRNEĞİ  kombinasyon hesaplama.csproj", "{B01F0C16-1962-43D5-98A3-5BD1F9703DEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B01F0C16-1962-43D5-98A3-5BD1F9703DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01F0C16-1962-43D5-98A3-5BD1F9703DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01F0C16-1962-43D5-98A3-5BD1F9703DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01F0C16-1962-43D5-98A3-5BD1F9703DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3230EDC5-5DA7-4685-A39B-DBE1747481FB}
+	EndGlobalSection
+EndGlobal

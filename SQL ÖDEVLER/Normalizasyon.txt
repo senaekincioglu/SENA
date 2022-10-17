@@ -1,0 +1,49 @@
+Normalizasyon Nedir ? Kuralları Nelerdir?
+
+Normalizasyon
+Normalizasyon yani diğer adı ile Ayrıştırma, veritabanlarında çok fazla sütun ve satırdan oluşan bir tabloyu tekrarlardan arındırmak için daha az satır ve sütun içeren alt kümelerine ayrıştırma işlemidir. Bunların tabi ki kuralları vardır bu kurallara uyduğumuzda her tabloda aynı sütun ve satırları tekrar etmemiş olacağız ve veritabanındaki verilerimiz sağlıklı kullanıma uygun olacaktır. Şimdi hazırsanız başlayalım.
+
+
+Amacı:
+
+Gereksiz veri tekrarını ortadan kaldırarak, veri fazlalığını en aza indirmektir. Veri tekrarı, veri sapmasına yol açar.Bu da veri bütünlüğünün bozulmasına neden olur.
+
+Veri bütünlüğünün sağlanması
+Uygulamadan bağımsızlık
+Performansı artırmak
+Avantajları:
+
+Veri bütünlüğünü sağlar.
+Verimli bir veri yapısı sunar.
+Gereksiz veri tekrarını engeller ve min. Alan kullanılır ve yerden tasarruf sağlar
+Saklanan veri daha anlaşır hale gelir.
+Hızlı sorgulama imkanı verir.
+ 
+
+Normalizasyon Kuralları
+Normalizasyonun her bir kuralı yani seviyeleri normal form olarak adlandırılır. Bu seviyeler gereksiz veri tekrarlarını ne derecede engellediği ve tutarlılığı ne kadar sağladığına bağlı olarak derecelendirilir. Seviye yükseldikçe veri tutarlılığı artar, veri tekrarı düşer.
+
+normalizasyon kuralları şeması
+
+ 
+
+Birinci Normal Form(1NF)
+Aynı tablo içinde tekrarlayan kolonlar bulunamaz,
+Her kolonda yalnızca bir değer bulunabilir.
+İkinci Normal Form(2NF)
+Tablo 1NF olmalıdır,
+Her satır bir eşsiz anahtar ile tanımlanmalıdır.
+Anahtar olamayan değerler ile kompozit anahtarlar arasında kısmi bağımlılık durumu oluşmamalıdır. Kısmi bağımlılık durumu, anahtar olmayan herhangi bir değer kompozit bir anahtarın yalnızca bir kısmına bağlı ise oluşur.
+Herhangi bir veri alt kümesi birden çok satırda tekrarlanmamalıdır. Bu tür veri alt kümeleri için yeni tablolar oluşturulmalıdır.
+Ana tablo ile yeni tablolar arasında, dış anahatlar kullanılarak ilişkiler tanımlanmalıdır.
+ 
+
+Üçüncü Normal Form(3NF)
+Veritabanı 2NF olmalıdır,
+Anahtar olmayan hiçbir kolon bir diğerine (anahtar olmayan başka bir kolona) bağlı olmamalı başka bir deyişle her kolon eşsiz anahtara tam bağımlı olmak zorundadır.
+BCNF / 3.5NF (Boyce-Codd Normal Form)
+Bir veri tabanının 3.5NF olabilmesi için aşağıdaki özellikleri karşılayabilmesi gerekir:
+
+Veri Tabanı 3NF olmalıdır,
+Her determinant (belirleyici kolon) aynı zamanda bir aday anahtar olmalıdır.
+Determinant: Aynı satırdaki diğer kolon değerlerini belirlemek için kullanılan kolon kümesi determinant olarak adlandırılır.

@@ -1,0 +1,78 @@
+İndeks, verilerin indeksleme alanına göre sıralanmış ve tablo halini almış şeklidir. Belirli bir sıra düzenine geçmek için indeks yapısı kullanılır. Bu şekilde veriler istenilen sıraya göre dizilmiş olur ve verilerin olduğu sıradan daha farklı şekilde görünümü sağlanır.
+İndeks Oluşturmanın Faydaları
+Veritabınında saklanan verilerin sayısı arttıkça performansta düşüklüğe neden olur. Dağınık bir yapıda olan verilerde istenilen veriyi aramak için tablo taraması işlemi yapılır. Bu işlemi küçük boyutlu bir tabloda yapmak kolaydır. Artan veri miktarına göre ise bu işlem vakit kaybettirir. Veriye erişim hızını arttırmak için bu yöntem kullanılır.
+
+İndeks Çeşitleri
+
+Clustered(Kümelenmiş) İndeks: Kümelenmiş indeks yapısında olan tablolardaki kayıtlar, fiziksel olarak indeksleme alanına göre dizilmiş şekildedir. Bu yapılanma dengeli ağaç(B-Tree) yapısına sahiptir. Kümelenmiş indeks oluşturulurken asıl verilerin olduğu veri sayfasına(data page) göstergeleri(pointer) kullanarak ulaşılmasına gerek kalmaz.  Çünkü kümelenmiş indeks gerçek verilerin sahip olduğu veri sayfaları üzerinden elde edilmiştir. Bu şekilde bir kümelenmiş indeks tarandığında ulaşılan yer verinin kendisidir. Yapılan taramalarda hızlı bir sonuç alınır. Eğer bir tabloda anahtar değer(primary key) varsa bu bir kümelenmiş indeks yapısıdır. Bir tablo üstünde bir kümelenmiş indeks tanımlanabilir. Bu nedenle tablo üzerinde yapılacak sorgular gözden geçirilip hangi sorguya göre aranacağına karar verilmelidir. Kümelenmiş indeks ya artan ya da azalan sırada olmalıdır.
+"Nonclustered"  İndeks: Bir veri yapısında kümelenmiş indeks oluşturulduktan sonra farklı bir alan üzerinden tekrar indeksleme yapılmak isteniyorsa "nonclustured" indeks kullanılır ve veri sayfalarının dışında bunun için tekrar bir dengeli ağaç yapısı oluşturulur. Herhangi bir arama yapıldığında ilk önce dengeli ağaçtaki indeksler taranır  ve bu ağaç üzerindeki  düğümün(node) gösterdiği veri sayfasına  gösterge vasıtasıyla gidilir. Bu şekilde istenilen veriler elde edilmiş olur. Nonclustered indekste verilere direk erişilemez. Elde edilen indeksleme yapısına erişmek için kümelenmiş indeks yapısı kullanılmış olur. Verileri herhangi bir alana göre sıralandığında erişim kümelenmiş indeks üzerinden anahtar değer  referans alınarak yapılır. Bu nedenle "nonclustered" indeks zaman ve performans kaybına neden olabilir. "nonclustered" indeks bir tabloda en fazla 249 adet oluşturulabilir.
+Tek(Unique) İndeks: İndeksteki indeksleme alanı olarak seçilen sütundaki verilerin tekrar kullanılmaması için bu yapı kullanılır. Veriye erişim hızını arttırır. Bu indeksleme çeşidi kümelenmiş ve "nonclustered" indeksler üzerinde kullanılabilir.
+          CREATE UNIQUE INDEX [indexadi] ON [dbo].[tabloadi]
+        (
+        [kolonadi1] ASC
+        )
+
+ 
+
+Tek Bir Alana Göre İndeksleme
+
+Artan Sırada İndeksleme: Verileri tek bir alana göre artan bir sırada dizilmesi isteniyorsa bu yapı kullanılır. Bu yapıyı oluşturmak için indeksleme yapılacak sütunun yanına ASC terimi eklenir.
+         CREATE INDEX [indexadi] ON [dbo].[tabloadi]
+         (
+         [kolonadi1] ASC
+         )
+
+Azalan Sırada İndeksleme: Verilerin azalarak indekslenmesi isteniyorsa indeksleme yapılcak sütunun yanına DESC terimi eklenir.
+         CREATE INDEX [indexadi] ON [dbo].[tabloadi]
+         (
+         [kolonadi1] DESC
+         )
+
+Birden Fazla Alana Göre İndeksleme
+
+Tablodaki veriler birden fazla alana göre indekslenirlerse elde edilen tablo ilk önce ilk sütuna göre daha sonra bir sonraki sütuna göre dizme işlemi uygulanır.
+
+        CREATE INDEX [indexadi] ON [dbo].[tabloadi]
+        (
+        [kolonadi1],[kolonadi2] ASC
+        )
+
+Örnekleme 
+
+İndeksleme yapısı bir örnekle gösterilmek istenirse, test veri tabanı altında öğrenci tablosu oluşturulur. Öğrenci tablosu aşağıdaki alanlardan oluşur.
+
+
+Eğer tablodaki ogrenciId sütunu için anahtar değer atanırsa kümelenmiş indeks elde edilir. Bu işlem ogrenciId sütunu üzerine sağ tıklanarak yapılır.
+
+
+
+Kümelenmiş indeksin kodu ogrenciId sütunu üzerinde aşağıdaki gibi oluşur.
+
+ 
+
+
+
+Oluşan öğrenci tablosunun içindeki bilgiler şunlardır.
+
+
+
+"Nonclustered" indeks için aşağıdaki kodlar kullanılabilir. ogrenciAd sütununa göre "nonclustered" indeks oluşturulmuş olur.
+
+CREATE NONCLUSTERED INDEX [indexadi1] ON [dbo].[ogrenci]
+        (
+        [ogrenciAd] ASC
+        )
+
+Eğer "nonclustered" indeks ogrenciNo sütununa göre yapılacak ise kod bölümü aşağıdaki gibidir.
+
+CREATE NONCLUSTERED INDEX [indexadi2] ON [dbo].[ogrenci]
+        (
+        [ogrenciNo] ASC
+        )
+
+"nonclustered" indeks birden fazla sütun için uygulanırsa aşağıdaki kod kullanılır.
+
+CREATE NONCLUSTERED INDEX [indexadi3] ON [dbo].[ogrenci]
+        (
+        [ogrenciAd],[ogrenciSoyad] ASC
+        )

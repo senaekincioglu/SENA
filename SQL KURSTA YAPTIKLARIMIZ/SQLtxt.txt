@@ -1,0 +1,15 @@
+normalizasyon kurallarına bak
+birebir tc primarykey
+foreignkey ikinci 
+
+bir öğrenci çok dersten ödev alır
+bir dertsen çok öğrenci ödev alır
+
+ilişki türleri
+birebir bire çok çoka çok
+
+database new database--- veri tabanaı oluşturma(datavaseye sağ tıkla)
+burda tablo oluşuyor
+new wuery de sorgu yazıyosun
+ıd de sağ tıka primary yap alta da yes yap
+boş geçmesinse tikleme

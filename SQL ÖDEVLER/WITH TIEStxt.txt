@@ -1,0 +1,1 @@
+WITH TIES, ORDER BY ile sıralanan sonuçlarda son kayıt ile aynı değerde olan kayıtların da listelenmesini sağlar. Bu durumda sonuç belirtilen n sayısından daha fazla olabilir. WITH TIES sadece ORDER BY ile birlikte kullanılmaktadır.
