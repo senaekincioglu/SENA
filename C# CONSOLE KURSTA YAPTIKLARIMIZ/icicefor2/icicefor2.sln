@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "icicefor2", "icicefor2\icicefor2.csproj", "{164AD2BC-B0F7-40E0-9BD1-B22C5767F740}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{164AD2BC-B0F7-40E0-9BD1-B22C5767F740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164AD2BC-B0F7-40E0-9BD1-B22C5767F740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164AD2BC-B0F7-40E0-9BD1-B22C5767F740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164AD2BC-B0F7-40E0-9BD1-B22C5767F740}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB730D4A-ABDB-4E3A-8518-3C1915CF6681}
+	EndGlobalSection
+EndGlobal

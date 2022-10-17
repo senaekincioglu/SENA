@@ -1,0 +1,11 @@
+metotlar : bir kodu fazladan yazmamak için kullanılır. 
+class: ilgili konuyu gruplara ayırır
+interface: classların içinde ortak olanları toplar yazdırır.
+kalıtım: nesne yönelimli programlamanın en önemli özelliklerinden birisidir. Kalıtım sayesinde sınıf yapılarımız 
+birbirinden türetilebilir. Bir sınıf herhangi bir üst sınıftan türetildiği zaman, türemiş olduğu sınıfın içerisindeki 
+public, default ve protected özellikteki bütün özelliklere sahip olur.
+
+
+consoleApp2 de random sayı atıyor ama gruplandırma yaparak atacak ve araya boşluk atacak.
+
+

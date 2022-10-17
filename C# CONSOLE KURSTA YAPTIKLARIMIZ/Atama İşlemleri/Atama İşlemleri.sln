@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atama İşlemleri", "Atama İşlemleri\Atama İşlemleri.csproj", "{82368561-8CDA-4E04-95D2-9959F7838C08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82368561-8CDA-4E04-95D2-9959F7838C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82368561-8CDA-4E04-95D2-9959F7838C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82368561-8CDA-4E04-95D2-9959F7838C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82368561-8CDA-4E04-95D2-9959F7838C08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {487B0276-9FE9-4A64-B932-433D776924FA}
+	EndGlobalSection
+EndGlobal
