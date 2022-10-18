@@ -1,0 +1,20 @@
+-- 1- Hangi müşteri kaç kere alışveriş yapmıştır. (ÖDEV)
+select CustomerID, COUNT(*) as 'TOPLAM' from Orders GROUP BY CustomerID 
+
+-- 2- Hangi tedarikçi hangi kategorideki üründen kaç dolarlık ürünü mevcuttur. (ÖDEV)
+select SupplierID, sum(UnitPrice*UnitInStock) as 'toplam' count (*)as 'Urun' from Products group by 
+SupplierID order by SupplierID desc
+ 
+-- 3- Ürünlerle birlikte ürünün satış adetini listeleyen sorgu (SUM, OrdersDetails, Products)
+select *,(select COUNT(Quantity) from [Order Details] o where p.ProductID= o.ProductID ) as 'Satış Adet' from Products p order by 'Satış Adet' asc	
+
+-- 4- Hangi satıştan kaç adet ürün satılmışır. (COUNT, Orders, OrderDetails)
+select COUNT(o.ProductID) as 'ÜrünID',COUNT(OrderID) as 'SiparişID' from [Order Details] o group by OrderID
+
+-- 5- 'VINET' id'li müşterinin satışlarını listeleyiniz. (Orders, OrderDetails) 
+select * ,(select o.CustomerID from Orders o where p.OrderID = o.OrderID and o.CustomerID = 'VINET')
+from [Order Details] p where OrderID in ((select o.OrderID from Orders o where o.CustomerID = 'VINET' ))
+
+-- 6- 3 numaralı ürünün satış yapıldığı müşterilerin id'lerini listeleyiniz. (OrderDetails, Orders)
+select *,(select o.ProductID from [Order Details] o where p.OrderID = o.OrderID and ProductID = 3 ) 
+as ProductId from Orders p where p.OrderID in ((select OrderID from [Order Details] where ProductID = 3))

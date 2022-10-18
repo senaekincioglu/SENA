@@ -1,0 +1,69 @@
+--Sum Yapısı
+
+select Sum(UnitPrice) from Products
+
+--depoda ücret bazlı olarak toplam ne kadarlık ürün kalmıştır.
+
+select sum(UnitsInStock*UnitPrice) from Products
+
+--1997 yılında alınmış siparişlerin toplam ne kadarlık kargo ödemesi
+
+select sum(Freight) from Orders where YEAR( OrderDate) = '1997'
+
+--bu zamana dek ödenmiş ortalama kargo ücreti nedir.
+
+select sum(Freight)/COUNT(OrderID) from Orders
+
+--stogu 15den kucuk olan kac ürün var
+select Count(productID) from Products where UnitsInStock<15
+
+--şu ana kadar toplam kaç dolarlık ciro var
+
+select *from Products
+select sum(Quantity*UnitPrice*(1-Discount)) from [Order Details]
+
+--AVG YAPISI (ORTALAMA ICIN )
+--bu zamana dek ödenmiş ortalama kargo ücreti nedir.
+select AVG(Freight) from Orders
+
+--ürünlerin ortalama satış fiyatı nedir
+select AVG(UnitPrice) from Products
+
+--ülke bazında ne kadar kargo ücreti ödenmiştir
+select *from Orders
+select sum(freight)/COUNT(Distinct ShipCountry) from Orders
+
+--Max min yapısı
+--sahip olunan degerler arasında en büyük ua da en kucuk degeri almak icin kullanılır ve bu fonksyonlar sadece sayısal degil metinseş ya da tarihsel ifader için de kullanılır
+--en yüksek bedelli ürün hangisi
+select max(unitprice) from Products
+
+--en yüksek kargo miktarı
+select max(freight) from Orders
+
+--müşteri idleri a ile k arasında olanların vermiş oldukları sipariş tarigi 01-01-1997 ile 06.06.1997 arasıdnda olan siparişlere en az ne kadar kargo icreti ödenmiştir.
+
+select min(freight) from Orders where CustomerID like '[A-K]%' and OrderDate between '01.01.1997' and '06.06.1997'
+
+--en fazla satışında  kaç dolarlık satış yapılmıştır.
+
+select *from [Order Details]
+select max(UnitPrice*Quantity*(1-Discount)) from [Order Details]
+select max((unitprice-(unitprice*Discount))*Quantity) from [Order Details]
+
+--5 ten büyük en düşük satışımızda kaç dolarlık satıs yapılmıstır
+
+select min((unitprice-(unitprice*Discount))*Quantity) from [Order Details] where UnitPrice > 5
+
+--in yapısı
+--veyalı sorgularda parantez hataların önüne geçmek için kullanılarn yapıdır */
+
+--2,4,5,7 nolu çalışlanların aldığı siparişleri gösteriniz
+select EmployeeID from Orders where EmployeeID in (2,4,5,7)
+
+--1 ya da 2 nolu kargo firmasıyla taşındmış 1996 yılında bir perşembe günü alınmış siparişler için ödenen azami kargo bedeli nedir.
+select max(freight) from Orders where ShipVia in (1,2) and YEAR(OrderDate) = '1996' and DATENAME(weekday, OrderDate) = 'Thursday'
+
+-- 'CACTU' 'DUMON' 'PERIC' idli müsteriler tarafından istenmiş 2 nolu kargo firmasıyla tasınmamıs kargo ücreti 20-200 arasında olan siparişlere toplam ne kadarlık kargo ödemesi yapılmsıtr
+select *from Customers 
+-- Sinema otomasyonu en az 10 tablolu veritabı oluştur ilişki veri ve bugün işlediğimiz soruları yap.

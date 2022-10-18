@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Okul Kayıt Formu 2", "Okul Kayıt Formu 2.csproj", "{380968BC-165A-4F86-9092-60CA627362F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{380968BC-165A-4F86-9092-60CA627362F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380968BC-165A-4F86-9092-60CA627362F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380968BC-165A-4F86-9092-60CA627362F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380968BC-165A-4F86-9092-60CA627362F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BD4FC49-FF13-4E75-A020-F237EA700E40}
+	EndGlobalSection
+EndGlobal
