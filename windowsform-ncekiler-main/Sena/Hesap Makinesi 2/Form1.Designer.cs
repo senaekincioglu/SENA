@@ -291,7 +291,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 383);
+            this.ClientSize = new System.Drawing.Size(237, 383);
             this.Controls.Add(this.lblhafiza);
             this.Controls.Add(this.btnesittir);
             this.Controls.Add(this.lblEkran);

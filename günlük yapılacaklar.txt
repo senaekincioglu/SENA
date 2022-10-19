@@ -1,0 +1,17 @@
+derste yaptıklarımızı mail olarak kendime at ve mail olarak attığın örnekleri mailden pc me al wp ye at, gitup a at
+şuanda güvenli.GİTUP DA KENDİ PCM DE VE WP DE TÜM YAPTIKLARIMIZ VAR.
+
+herzaman o gün hangi konuyu yaptıysak onu yap ve üstüne örnek yap Sonra herşey 
+bitince geride kaldığım sql ve console dan tekrar yaparsın
+
+ödev : profesyonel hesap makinesi yap CUMA AKŞAMINA KADAR var gruba hangilerini yapılmicağı atıldı.üstteki wiew 
+ve edit ve help olmicak.ilk verilen grupla yap.
+
+geride kaldıklarım : 
+sql de komutlardan devam et defterden (sql tüm komutlar fonksiyonlar -  group by - subquery ve diğerleri)
+
+tekrar : diziler - foreach - metotlar - classlar özelliklerini yaz tekrar klasöründe var - 
+interface yaz çalış - kalıtım interface yaz - kalıtım - indexof - erişim türleri - 
+params örnek 57 de açıklaması var
+
+
