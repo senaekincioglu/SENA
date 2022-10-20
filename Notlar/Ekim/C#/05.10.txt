@@ -1,0 +1,280 @@
+/*static int Faktoriyel(int f)
+        {
+            int carpim = 1;
+            for (int i = 1; i <= f; i++)
+            {
+                carpim*= i;
+            }
+            return carpim;
+        }*/
+
+        /*static List<int> sayilar()
+        {
+            List<int> sayilar = new List<int>();
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("Bir sayı giriniz:");
+                int sayi = Convert.ToInt32(Console.ReadLine());
+                sayilar.Add(sayi);
+            }
+            Console.ReadLine();
+            return sayilar;
+        }*/
+
+        /*static List<int> sayiUret()
+        {
+            List<int> sayilar = new List<int>();
+            int enKucuk, enBuyuk, sayiAdeti;
+              Random rnd = new Random();
+            Console.Write("En küçük sayıyı giriniz:");
+            enKucuk = Convert.ToInt32(Console.ReadLine());
+            Console.Write("En büyük sayıyı giriniz:");
+            enBuyuk = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Alınacak rastgele sayı adetini giriniz:");
+            sayiAdeti = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < sayiAdeti; i++)
+            {
+                sayilar.Add(rnd.Next(enKucuk, enBuyuk));
+            }
+            return sayilar;
+        }*/
+
+        /*static string listToString(List<string> kelimeler)
+        {
+            string k = " ";
+            for (int i = 0; i < kelimeler.Count; i++)
+            {
+                k += kelimeler[i] + " ";
+            }
+            return k;
+        }*/
+
+        /*static double hesapMakinesi()
+        {
+            double sayi1;
+            double sayi2;
+            string secim;
+            Console.WriteLine("1.sayıyı giriniz:");
+            sayi1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("2.sayıyı giriniz:");
+            sayi2 = Convert.ToDouble(Console.ReadLine());
+        giris:
+            Console.WriteLine("Yapıcağınız işlemi seçiniz:+,-,/,*(Çıkmak inin çıkış yazınız");
+            secim = Console.ReadLine();
+
+            if (secim == "+")
+                return (sayi1 + sayi2);
+            else if (secim == "-")
+                return (sayi1 - sayi2);
+            else if (secim == "/")
+                return (sayi1 / sayi2);
+            else if (secim == "*")
+                return (sayi1 * sayi2);
+            else if (secim == "çıkış")
+                return 0;
+            else
+            {
+                Console.WriteLine("Yanlış işlem seçtiniz lütfen tekrar deneyiniz");
+                goto giris;
+            }
+        }
+        static double hesapMakinesi2()
+        {
+            double sayi1,sonuc;
+            double sayi2;
+            string secim;
+            Console.WriteLine("1.sayıyı giriniz:");
+            sayi1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("2.sayıyı giriniz:");
+            sayi2 = Convert.ToDouble(Console.ReadLine());
+            giris:
+            Console.WriteLine("Yapıcağınız işlemi seçiniz:+,-,/,*(Çıkmak inin çıkış yazınız");
+            secim = Console.ReadLine();
+            switch (secim)
+            {
+                case "+":
+                    sonuc= sayi1 + sayi2;break;
+                case "-":
+                    sonuc= sayi1 - sayi2;break;
+                case "/":
+                case "%":
+                    if (sayi2 == 0)
+                    {
+                        sonuc = -1;
+                        Console.WriteLine("0'a bölüm olmaz");
+                    }
+                    else
+                    sonuc= sayi1 / sayi2;break;
+                case "*":
+                    sonuc= sayi1 * sayi2;break;
+                case "çıkış":
+                    sonuc=0;
+                    break;
+                default:
+                    Console.WriteLine("Yanlış işlem seçtiniz lütfen tekrar deneyiniz");
+                    goto giris;
+            }
+            return sonuc;
+        }*/
+
+        /*static float[] makeFloat(double[] doubleArray)
+        {
+            float[] floatArray = new float[doubleArray.Length];
+            for (int i = 0; i < doubleArray.Length; i++)
+            {
+                floatArray[i] = (float)doubleArray[i];
+            }
+            return floatArray;
+        }*/
+
+        /*static List<int> ksayilar(List<int> sayilar)
+        {
+            List<int> ksayilar = new List<int>();
+            for (int i = 0; i < sayilar.Count; i++)
+            {              
+                ksayilar.Add(Convert.ToInt32(Math.Pow(sayilar[i],2)));
+            }
+            return ksayilar;
+        }*/
+
+        /*static int Topla(params int[] sayilar)
+        {
+            int toplam = 0;
+            foreach (var item in sayilar)
+            {
+                toplam += item;
+            }
+            return toplam;
+        }*/
+
+        /*static void PuanTopla(string isim,int yas, params int[] puan)
+        {
+            int toplam = 0;
+            foreach (var item in puan)
+            {
+                toplam += item;
+            }
+            Console.WriteLine(isim+" adlı "+yas+" yaşındaki öğrencinin notları toplamı:"+toplam);
+            Console.ReadLine();
+        }*/
+
+        /*static int kare(ref int sayi)
+        {
+            return sayi * sayi;
+        }*/
+
+        /*static int degerDegistir(ref int sayi)
+        {
+            sayi = sayi * 10;
+            return sayi;
+        }
+        static int degerDegistirOUT(out int sayi)
+        {
+            sayi = 20;
+            return sayi+100;
+        }*/
+
+        /*static int enBuyukSayiBul(params int[] sayilar)
+        {
+            int bsayi = -1;
+            foreach (var item in sayilar)
+            {
+                if (item > bsayi)
+                {
+                    bsayi =item;
+                }
+            }
+            return bsayi;
+            }*/
+
+            /*static int Faktoriyel(int f)
+        {
+            if (f <= 1)
+                return 1;
+            else
+                return f * Faktoriyel(f-1);
+        }*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*int besfaktoiyel = Faktoriyel(5);
+            Console.WriteLine(besfaktoiyel);
+            Console.ReadLine();*/
+
+            /*foreach (var item in sayilar())
+            {
+                Console.WriteLine(item);
+            }*/
+
+            /*foreach (var item in sayiUret())
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();*/
+
+            /*List<string> kelimeler = new List<string>() { "Araba" ,"hızla" , "yanımdan" ,"geçti" };
+            string s = listToString(kelimeler);
+            Console.WriteLine(s);
+            Console.ReadLine();*/
+
+            /*Console.WriteLine(hesapMakinesi());
+            Console.WriteLine(hesapMakinesi2());
+            Console.ReadLine();*/
+
+            /*double[] doubleArray = { 5.0, 4.5, 6.5, 7.9 };
+            float[] floatArray = makeFloat(doubleArray);
+            foreach (var item in floatArray)
+            {
+                Console.WriteLine(item);
+            }*/
+
+            /*List<int> sayilar = new List<int>();
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("Bir sayı giriniz:");
+                int sayi = Convert.ToInt32(Console.ReadLine());
+                sayilar.Add(sayi);
+            }
+            foreach (var item in ksayilar(sayilar))
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();*/
+
+            /*Console.Write("Kaç adet sayi gireceksiniz:");
+            int sayac = Convert.ToInt32(Console.ReadLine());
+            int[] sayilar = new int[sayac];
+            for (int i = 0; i < sayac; i++)
+            {
+                Console.Write((i+1)+".sayıyı giriniz:");
+                int sayi = Convert.ToInt32(Console.ReadLine());
+                sayilar[i] = sayi;
+            }
+            Console.WriteLine(Topla(sayilar));
+            Console.WriteLine(Topla(15, 23, 42, 44, 65));
+            Console.WriteLine(Topla(15, 23));
+            Console.WriteLine(Topla(15, 23, 42));            
+            Console.ReadLine();*/
+
+            //PuanTopla("Ahmet", 20, 60, 70, 80, 90);
+
+            //ref kullanırken parametrenin ilk değeri alması zorunludur.
+            /*int[] sayiDizisi = new int[8];
+            int bes=0;//*************
+            kare(ref bes);*/
+
+            /*int sayi = 5;
+            Console.WriteLine(degerDegistir(ref sayi));            
+            int s2;
+            int s3 = degerDegistirOUT(out s2);
+            Console.WriteLine("S2:" + s2);
+            Console.WriteLine("S3:" + s3);
+            Console.ReadLine();*/
+
+            /*Console.WriteLine("En büyük sayi:"+enBuyukSayiBul(1,5,9,12,66,3,4,21,45,7));
+            Console.ReadLine();*/
+
+            //Recursive:Kendisini çağıran metotlar:
+
+            /*int ff = Faktoriyel(5);
+            Console.WriteLine("ff:"+ff);
+            Console.ReadLine();*/

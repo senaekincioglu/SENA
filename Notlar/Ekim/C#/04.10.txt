@@ -1,0 +1,320 @@
+ /*static List<long> Tcler = new List<long>();
+        static List<string> adSoyadlar = new List<string>();
+        static List<string> adresler = new List<string>();
+        static List<string> telefonlar = new List<string>();
+
+        static void PersonelEkle(long tc, string adSoyad = "", string adres = " ", string telefon = " ")
+        {
+            if (tc != 0)
+            {
+                Tcler.Add(tc);
+                adSoyadlar.Add(adSoyad);
+                adresler.Add(adres);
+                telefonlar.Add(telefon);
+            }
+        }
+
+        static string PersonelAra(long tc = 0, string adSoyad = "")
+        {
+            string personel = "";
+            int personelIndex = -1;//listede -1 olmayacağı için,-1 bulunmadığı anlamına gelir.
+            if (adSoyad != "")
+            {
+                if (adSoyadlar.Contains(adSoyad) == true)
+                {
+                    personelIndex = adSoyadlar.IndexOf(adSoyad);
+                }
+            }
+            else if (tc != 0)
+            {
+                if (Tcler.Contains(tc) == true)
+                {
+                    personelIndex = Tcler.IndexOf(tc);
+                }
+            }
+            if (personelIndex != -1)
+            {
+                personel = Convert.ToString(Tcler[personelIndex]) + " " + adSoyadlar[personelIndex] + " " +
+                adresler[personelIndex] + " " + telefonlar[personelIndex];
+            }
+            return personel;
+        }
+        static void PersonelSil(long tc = 0)
+        {
+            int personelIndex = -1;
+            if (tc != 0)
+            {
+                if (Tcler.Contains(tc) == true)
+                {
+                    personelIndex = Tcler.IndexOf(tc);
+                    Tcler.Remove(personelIndex);
+                }
+            }
+            if (personelIndex != -1)
+            {
+                Tcler.RemoveAt(personelIndex);
+                adresler.RemoveAt(personelIndex);
+                adSoyadlar.RemoveAt(personelIndex);
+                telefonlar.RemoveAt(personelIndex);
+            }
+        }
+
+        static void PersonelGuncelle(long tc, string AdSoyad, string adres, string telefon)
+        {
+            if (tc != 0)
+            {
+                int personelIndex = Tcler.IndexOf(tc);
+                if (personelIndex != -1)
+                {
+                    PersonelAra(tc);
+                    adSoyadlar[personelIndex] = AdSoyad;
+                    adresler[personelIndex] = adres;
+                    telefonlar[personelIndex] = telefon;
+                }
+            }
+        }*/
+
+        /*static int sayiGir()
+        {
+            Console.WriteLine("Bir sayı giriniz:");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            return sayi;
+        }
+        static int Bolum(int sayi1,int sayi2)
+        {
+            return sayi1 / sayi2;
+        }
+        static double Bolum(double sayi1, double sayi2)
+        {
+            return Math.Round(sayi1 / sayi2);
+        }*/
+
+        /*static int Faktoriyel(int sayi)
+        {
+            int carpim = 1;
+            for (int i = 1; i <= sayi; i++)
+            {
+                carpim*= i;
+            }
+            return carpim;
+        }*/
+
+        /*static bool asalMı(int sayi)
+        {
+            int kontrol=0;
+            for (int i = 1; i <=sayi; i++)
+            {
+                if(sayi%i==0)
+                kontrol++;
+            }
+            if (kontrol == 2)
+            {
+                return true;
+            }
+            else
+                return false;
+        }*/
+
+        /*static int[] Random10()
+        {
+            int[] sayiDizisi = new int[10];
+            Random rnd = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                sayiDizisi[i] = rnd.Next(0, 10);
+            }
+            return sayiDizisi;
+        }*/
+
+        /*static void DiziYaz(int[] sayilar)
+        {
+            int toplam = 0;
+            int kare = 0;
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                Console.WriteLine(sayilar[i]);
+                toplam += sayilar[i];
+                kare += Convert.ToInt32(Math.Pow(sayilar[i], 2));
+            }
+            Console.WriteLine("Dizideki sayıların toplamı:" + toplam);
+            Console.WriteLine("Dizideki sayıların kareleri toplamı:" + kare);
+            Console.ReadLine();
+        }
+        static void DiziYaz(int[] sayilar, bool SifirlarıGoster)
+        {
+            if (SifirlarıGoster)
+            {
+                for (int i = 0; i < sayilar.Length; i++)
+                {
+                    Console.WriteLine(sayilar[i]);
+                }
+            }
+            else
+                for (int i = 0; i < sayilar.Length; i++)
+                {
+                    if (sayilar[i] != 0)
+                        Console.WriteLine(sayilar[i]);
+                }
+            Console.ReadLine();
+        }
+
+        static int[] tSayi(int[]sayilar)
+        {
+            int[] tsayilar = new int[20];
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                
+                if (sayilar[i] % 2 == 1)                                 
+                    tsayilar[i] = sayilar[i];                              
+            }
+            return tsayilar;
+        }*/
+
+        /*static int bkucuk(int sayi1, int sayi2)
+        {
+            if (sayi1 < sayi2)
+                return sayi2;
+            else if (sayi2 < sayi1)
+                return sayi1;
+            else
+                return sayi1 = sayi2;
+        }
+        static int bkucuk(int sayi1, int sayi2, int sayi3)
+        {
+            return bkucuk(bkucuk(sayi1, sayi2), sayi3);
+        }*/
+/////////////////////////////////////////////////////////////////////////
+ /*long tc = -1;
+            string adSoyad = " ";
+            string adres = " ";
+            string telefon = " ";
+
+            PersonelEkle(7173677834, "Mehmet Demir", "İstanbul ..", "0546......");
+            PersonelEkle(7777777777, "Hasan Emir", "İstanbul ..", "0544......");
+            PersonelEkle(8888888888, "Ahmet Emin", "İstanbul ..", "0534......");
+            PersonelEkle(9999999999, "Kerem Temiz", "İstanbul ..", "0549......");
+            PersonelEkle(5655555555, "Kerim Demir", "İstanbul ..", "0539......");
+            Console.WriteLine("Yapılacak işlemi seçiniz"+"\n" +"1-Personel Ekle"+"\n"+"2-Personel Ara" + "\n"+"3-Personel Sil" + "\n"+"4-Personel Güncelle " + "\n"+"5-Tüm Personelleri göster");
+            int secim = Convert.ToInt32(Console.ReadLine());
+            if (secim == 1)
+            {
+                for (int i = 0; ; i++)
+                {
+                    Console.WriteLine("Eklenecek personelin Tcsini giriniz:");
+                    tc = Convert.ToInt64(Console.ReadLine());
+                    if (tc == 0)
+                    {
+                        break;
+                    }
+                    Console.WriteLine("Eklenecek personelin Adı ve soyadını giriniz:");
+                    adSoyad = Console.ReadLine();
+                    Console.WriteLine("Eklenecek personelin adresini giriniz:");
+                    adres = Console.ReadLine();
+                    Console.WriteLine("Eklenecek personelin telefon numarasını giriniz:");
+                    telefon = Console.ReadLine();
+                    PersonelEkle(tc, adSoyad, adres, telefon);
+                }
+            }
+            for (int i = 0; i < Tcler.Count; i++)
+            {
+                Console.WriteLine("TC:" + Tcler[i]);
+                Console.WriteLine("Ad Soyad:" + adSoyadlar[i]);
+                Console.WriteLine("Adres:" + adresler[i]);
+                Console.WriteLine("Telefon:" + telefonlar[i]);
+                Console.WriteLine("-------------------------");
+            }
+            if (secim == 2)
+            {
+                string pad = "";
+                long ptc = 0;
+                Console.WriteLine("Eklenecek personelin Tcsini giriniz:");
+                ptc = Convert.ToInt64(Console.ReadLine());
+                Console.WriteLine("Aranıcak personelin adını giriniz:");
+                pad = Console.ReadLine();
+
+                string bulunan = PersonelAra(ptc, pad);
+                if (bulunan != "")
+                    Console.WriteLine("Aradığınız isim personel listesimizde bulunmaktadır.Kişisel bilgileri şunlardır:" + "\n" + bulunan);
+                else
+                    Console.WriteLine("Aradığınınız isim personel listesinde bulunmamaktadır.");
+            }
+            if (secim == 3)
+            {
+                long ptc = 0;
+                Console.WriteLine("Silinecek personelin Tcsini giriniz:");
+                ptc = Convert.ToInt64(Console.ReadLine());
+                PersonelSil(ptc);
+            }
+            if (secim == 4)
+            {
+                Console.WriteLine("Güncellenecek personelin Tcsini giriniz:");
+                tc = Convert.ToInt64(Console.ReadLine());
+                Console.WriteLine("Güncellenecek personelin Adı ve soyadını giriniz:");
+                adSoyad = Console.ReadLine();
+                Console.WriteLine("Güncellenecek personelin adresini giriniz:");
+                adres = Console.ReadLine();
+                Console.WriteLine("Güncellenecek personelin telefon numarasını giriniz:");
+                telefon = Console.ReadLine();
+                PersonelGuncelle(tc, adSoyad, adres, telefon);
+            }
+            if (secim == 5)
+            {
+                foreach (var item in adSoyadlar)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.ReadLine();
+            }
+            Console.ReadLine();*/
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /*int bol = Bolum(600, 13);
+            double bol2 = Bolum(600D, 13D);
+            Console.WriteLine("integer bölüm"+bol);
+            Console.WriteLine("double bölüm:"+bol2);
+            Console.ReadLine();*/
+
+            /*int faktoriyel = Faktoriyel(5);
+            Console.WriteLine(faktoriyel);
+            Console.ReadLine();*/
+
+            /*Console.WriteLine("Asallığı kontrol edilecek sayıyı giriniz");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            if (asalMı(sayi))
+                Console.WriteLine("Sayı asaldır");
+            else
+                Console.WriteLine("Sayı asal değildir");
+            Console.ReadLine();*/
+
+            /*int[] gelen = new int[10];
+            gelen = Random10();
+            int sira = 1;
+            foreach (var item in gelen)
+            {
+                Console.WriteLine(sira+"."+item);
+                sira++;
+            }
+            Console.ReadLine();*/
+
+            /*int[] sayilar = {1,2,3,4,5,6,7,8,9,10};
+             int[] sayilar2 = { 1, 2, 3, 0, 5, 0, 7, 8, 0, 10 };
+             DiziYaz(sayilar);
+             DiziYaz(sayilar2, true);
+             DiziYaz(sayilar2, false);
+             Random rnd = new Random();
+             int[] sayilar3 = new int[20];
+             for (int i = 0; i < sayilar.Length; i++)
+             {
+                 sayilar[i] = rnd.Next(0, 20);
+             }
+             int[] teksayilar = tSayi(sayilar);
+             DiziYaz(teksayilar,false);*/
+
+            /*Console.WriteLine("1.sayıyı giriniz:");
+            int sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2.sayıyı giriniz:");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("3.sayıyı giriniz:");
+            int sayi3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Büyük olan sayı:" + bkucuk(sayi1, sayi2));
+            Console.WriteLine("Büyük olan sayı:" + bkucuk(sayi1, sayi2,sayi3));
+            Console.ReadLine();*/

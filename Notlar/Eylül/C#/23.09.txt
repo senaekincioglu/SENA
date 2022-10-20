@@ -1,0 +1,42 @@
+/*int sayi;
+              Console.Write("Bir sayı giriniz: ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            if (sayi > 5)
+                Console.WriteLine("Sayı 5ten küçüktür."+sayi);
+            else
+                Console.WriteLine("Sayı 5ten büyüktür."+Math.Pow(sayi,2));
+            Console.ReadLine();*/
+
+            /*int sayi1, sayi2;
+            Console.WriteLine("Birinci sayıyı giriniz: ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("İkinci sayıyı giriniz: ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            if (sayi1 > sayi2)
+                Console.WriteLine("Büyük olan sayı 1.sayıdır."+sayi1);
+            else if (sayi1 < sayi2)
+            {
+                Console.WriteLine("Büyük olan sayı 2.sayıdır." + sayi2);
+            }
+            else
+                Console.WriteLine("Sayılar eşittir.");
+            Console.ReadLine();*/
+            /*int sayi1, sayi2,sayi3;
+            int toplam = 0;
+            Console.WriteLine("Birinci sayıyı giriniz: ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("İkinci sayıyı giriniz: ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Üçüncü sayıyı giriniz: ");
+            sayi3 = Convert.ToInt32(Console.ReadLine());
+            if (sayi1 < 100)
+                 toplam+=sayi1;
+            if (sayi2 < 100)
+                toplam+=sayi2;
+            if (sayi3 < 100) {
+                toplam+=sayi3; }
+
+            Console.WriteLine("Sayıların toplamı=" + toplam);
+            if (toplam == 0)
+                Console.WriteLine("Tüm sayılar 100den büyük");
+            Console.ReadLine();*/

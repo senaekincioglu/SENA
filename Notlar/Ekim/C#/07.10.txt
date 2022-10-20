@@ -1,0 +1,176 @@
+/*for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <=10; j++)
+                {
+                    Console.Write(j+"x"+i+"="+i*j+"\t");
+                }
+                Console.WriteLine(" ");
+            }
+            Console.ReadLine();*/
+
+            /*for (int i = 1; i <= 20; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*for (int i = 20; i > 0; i--)
+            {
+                for (int j = 1; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*for (int i = 1; i <= 20; i++)
+            {
+                for (int j = 1; j <= 20; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int k = 1; k <= i; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*List<string> kitaplar = new List<string>();
+            string secim = "";
+            bool a = true;
+            do
+            {
+                Console.Write("Kütüphane Menüsü" + "\n" + "1-Görüntüle" + "\n" + "2-Ekle" + "\n" + "3-Sil" + "\n" + "0-Çıkış"+"\n"+ "Yapılacak işlemi seçiniz:");
+                secim = Console.ReadLine();                
+                switch (secim)
+                {
+                    case "1":
+                        foreach (var item in kitaplar)
+                        {
+                            Console.WriteLine(item);                            
+                        }
+                        Console.WriteLine("-----------------------------------");
+                        break;
+                    case "2":
+                        Console.Write("Eklenicek kitap adını yazınız:");
+                        string kadı = Console.ReadLine();
+                        kitaplar.Add(kadı);
+                        Console.WriteLine("-----------------------------------");
+                        break;
+                    case "3":
+                        Console.Write("Silinecek kitap adını yazınız:");
+                        string kadı2 = Console.ReadLine();
+                        kitaplar.Remove(kadı2);
+                        Console.WriteLine("-----------------------------------");
+                        break;
+                    case "0":
+                        Console.WriteLine("Çıkış yapılıyor...");
+                        a = false;
+                        break;
+                    default:
+                        Console.WriteLine("Yanlış işlem seçtiniz.Lütfen geçerli bir işlem seçiniz.");
+                        Console.WriteLine("-----------------------------------");
+                        break;                        
+                }
+            } while (a);
+
+            Console.ReadLine();*/
+
+            /*Random rnd = new Random();
+            List<int> tahminler = new List<int>();
+            int sayi = rnd.Next(0, 1000);
+            for (int i =1; i <= 15; i++)
+            {
+                Console.WriteLine(i+".tahmininizi giriniz:");
+                int tahmin = Convert.ToInt32(Console.ReadLine());
+                tahminler.Add(tahmin);
+                if (tahmin < sayi)
+                {
+                    Console.WriteLine("Tahmininiz sayıdan küçüktür");
+                }
+                else if (tahmin > sayi)
+                {
+                    Console.WriteLine("Tahmininiz sayıdan büyüktür");
+                }
+                else
+                {
+                    Console.WriteLine("Tahmininiz doğru sayı:" + sayi + "idi");
+                    break;
+                }
+            }
+            Console.WriteLine("Tahminleriniz:");
+            foreach (var item in tahminler)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();*/
+
+            /*double[] sayilar = {8.5,6.7,9.0};
+            double[] kokler =SqrtBul(sayilar);
+            foreach (var item in kokler)
+            {
+                Console.WriteLine(item);
+            }*/
+
+            ////////////////////////////////////////////////TRY-CATCH////////////////////////////////////////////////////
+
+            /*int bolunen = 20;
+            int bolen = 0;
+            try
+            {
+                int bolum = bolunen / bolen;
+                Console.WriteLine(bolum);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Bir hata ile karşılaşıldı.Ancak program durmadı.Devam ediyor.");
+                //throw;//hatayı fırlatıyor
+            }
+            finally
+            {
+                Console.WriteLine("Try bloku çalışsada çalışmasada çalışan blok.2 durumda da çalışır");
+            }*/
+
+            /*int bolunen = 20;
+            int bolen = 0;
+            try
+            {
+                int bolum = bolunen / bolen;
+                Console.WriteLine(bolum);
+            }
+            catch (DivideByZeroException hata)
+            {
+                Console.WriteLine("0'a bölme hatası!Bölen 0 olamaz"+hata.Message);
+            }
+            catch(FormatException hata)
+            {
+                Console.WriteLine("Format Hatası!"+hata.Message);
+            }
+            catch (IndexOutOfRangeException hata)
+            {
+                Console.WriteLine("Dizide olmayan elamana ulaşmaya çalıştın"+hata.Message);
+            }
+            catch(Exception genelhata)
+            {
+                Console.WriteLine("Bir hata ile karşılaşıldı.Ancak program durmadı.Devam ediyor."+genelhata.Message);
+                Console.WriteLine("Bir hata ile karşılaşıldı.Ancak program durmadı.Devam ediyor."+getType().Name);
+
+            }*/
+///////////////////////////////////////////////////////////////////////
+ /*static double[] SqrtBul(double[] sayilar)
+        {
+            double[] kokler = new double[sayilar.Length];
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                kokler[i] = Math.Sqrt(sayilar[i]);
+            }
+            return kokler;
+        }*/

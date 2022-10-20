@@ -1,0 +1,26 @@
+List<int> ilkListem = new List<int>();//Liste;kapasitesi sınırlı değil,otomamtik genişler.
+            List<string> sehirler = new List<string>() { "İstanbul","İzmir","Manisa","Siirt","Adana","Bursa","Mersin" };
+            sehirler.Add("Sivas");//ekleme
+            sehirler.Insert(1,"Kütahya");//araya ekleme
+            foreach (var item in sehirler)
+            {
+                Console.WriteLine(item + " "); 
+            }
+            Console.WriteLine("*************************************");
+            for (int i = 0; i <sehirler.Count; i++)
+            {
+                Console.WriteLine(sehirler[i] + " ");
+            }
+            Console.WriteLine("*************************************");
+            bool sivasKontrol = sehirler.Contains("Sivas");//kontrol etme
+            Console.WriteLine("SivasKontrol:" + sivasKontrol);
+            sehirler.Remove("İstanbul");//çıkarma
+            sehirler.RemoveAt(2);//belirli indexi çıkarma
+            sehirler.Sort();//Alfabetik sıra
+            for (int i = 0; i < sehirler.Count; i++)
+            {
+                Console.WriteLine(sehirler[i] + " ");
+            }
+            Console.WriteLine("*************************************");
+            sehirler.Clear();//silme
+            Console.ReadLine();

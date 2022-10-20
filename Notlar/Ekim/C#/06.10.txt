@@ -1,0 +1,172 @@
+/////////////////////////////////////////////////06.10.2022////////////////////////////////////////////////////
+
+            /////////////////////////////////////////////////Tarih-Saat///////////////////////////////////////////////////
+
+            /*Console.WriteLine("Min Date Time:"+DateTime.MinValue);
+            Console.WriteLine("Max Data Time"+DateTime.MaxValue);
+            Console.WriteLine("Şuanki tarih saat:"+DateTime.Now);
+            Console.WriteLine("Şuanki tarih:"+DateTime.Today);
+            DateTime TarihSaat = new DateTime();
+            TarihSaat = DateTime.Now;
+            Console.WriteLine("Gün:" + TarihSaat.Day);
+            Console.WriteLine("Ay:"+TarihSaat.Month);
+            Console.WriteLine("Yıl:"+TarihSaat.Year);
+            Console.WriteLine("Tarih::"+TarihSaat.ToShortDateString());//saat kısmını atar.           
+            Console.WriteLine("Haftanın kaçıncı günü:"+TarihSaat.DayOfWeek);
+            Console.WriteLine("Yılın kaçıncı günü:"+TarihSaat.DayOfYear);
+            Console.WriteLine("Günün kaçıncı günü:"+TarihSaat.TimeOfDay);
+            Console.WriteLine("Saat:"+TarihSaat.Hour);
+            Console.WriteLine("Dakika:"+TarihSaat.Minute);
+            Console.WriteLine("Saniye:"+TarihSaat.Second);
+            Console.WriteLine("Milisaniye:"+TarihSaat.Millisecond);
+            Console.WriteLine();
+
+            long numberOfTicks=TarihSaat.Ticks;
+            DateTime myDate = new DateTime(numberOfTicks);
+            string test = myDate.ToString("dd.mm.yyyy");
+            Console.WriteLine("Test:"+test);
+            Console.WriteLine();
+
+            DateTime tarihSaat2 = new DateTime(2002,09,13);
+            TimeSpan gecenZaman = TarihSaat - tarihSaat2;
+            Console.WriteLine("Doğum günü:" + tarihSaat2.DayOfWeek);
+
+            Console.WriteLine("Geçen zaman:"+gecenZaman.Days);
+            double yasi = Convert.ToDouble(gecenZaman.Days) / 365;
+            Console.WriteLine("Yaşı:"+yasi);
+
+            Console.WriteLine("Dosya adı:" + DateTime.Now.ToFileTime());
+
+            Console.WriteLine(yasHesapla(2002));
+            Console.ReadLine();*/
+            //////////////////////////////////////////////////MATH///////////////////////////////////////////////////////
+
+            /*int mutlak = Math.Abs(-7);//Mutlak değer
+            Console.WriteLine(mutlak);
+            double cos = Math.Cos(45);//Cosinus
+            double cos45 = Math.Round(Math.Cos(45),2);
+            Console.WriteLine("Cos45:"+cos);
+            Console.WriteLine("Cos45(yuvarlanmış):"+cos45);
+            Console.WriteLine("Tan45(yuvarlanmış):"+Math.Round(Math.Tan(45), 2));//Tanjant
+            Console.WriteLine(Math.Max(45,55));//Maximum değer
+            Console.WriteLine(Math.Min(12,23));//Minimum değer
+            Console.WriteLine(Math.Pow(2,10));//Üs alma
+            Console.WriteLine(Math.Sqrt(25));//Kök alma
+            Console.WriteLine(Math.Log(4,2));//Logaritma(önce sayı sonra taban)
+            Console.WriteLine(Math.Exp(4));//e üzeri x
+            Console.WriteLine(Math.Log10(1000));//1O tabanında Logaritma
+            Console.WriteLine();
+
+            double[] numbers = { -1, 0, 0.105, 0.5, 0.789, 1, 4, 6.9, 10, 50, 100, 500, 1000,Double.MaxValue };
+            foreach (double item in numbers)
+            {
+                Console.WriteLine("1O tabanına göre "+item+" sayısının log değeri:"+Math.Log10(item));
+            }
+            Console.ReadLine();*/
+
+            //////////////////////////////////////////////String Methods/////////////////////////////////////////////////
+
+            /*string birlesim = String.Concat("Smart ", "Pro ", "405Sbaj", 2022);//concat=Yan yana birleştir/yaz.
+            Console.WriteLine(birlesim);
+
+            int[] dizi = { 3, 4, 5, 6 };
+            Console.WriteLine(String.Concat(dizi));
+
+            string str1 = "aslantepe", str2 = "ASLANTEPE",str3="aslantepe";
+            Console.WriteLine(String.Compare(str1,str2));//Compare=Karşılaştırma yapar.Önce büyük harfler gelir.
+            Console.WriteLine(String.Compare(str2,str1));//Sözlük karşılaştırması gibi birşey
+            Console.WriteLine(String.Compare(str1,0,str2,0,3));//Başlangıç harfi ve kaç harf
+            Console.WriteLine(String.Compare(str1,0,str2,0,3,true));//Büyük küçük harf takma durumu
+            Console.WriteLine(String.Compare(str1,str3));//Aynı olursa 0 verir
+
+            string metin = "BEŞİKTAŞ";
+            Console.WriteLine(metin.IndexOf("Ş"));
+            Console.WriteLine(metin.LastIndexOf("Ş"));
+            Console.WriteLine(metin.StartsWith("BEŞ"));//Metinin başlangıcı doğru mu yanlış mı
+            Console.WriteLine(metin.EndsWith("KTAŞ"));//Metinin sonu doğru mu yanlış mı
+
+            string yazi = "          8TAŞ                ";
+            yazi = yazi.Trim(' ');//Boşlukları atar
+            Console.WriteLine("Yazı:"+yazi);
+            yazi = yazi.Trim('8');//En sağ ve en soldakileri keser
+            Console.WriteLine("Yazı:"+yazi);
+
+            char[] dizi2 = { 'Ş', 'H', 'E', 'A','O'};
+            yazi = yazi.Trim(dizi2);//yazıdan listedeki karakterleri metnin kenarından çıkarır.
+            Console.WriteLine("Yazi:"+yazi);
+
+            string str4 = "Merhaba Dünya";
+            Console.WriteLine(str3.PadRight(15,'E'));//Verilen uzunluğa göre sağ tarafa ekler.
+            Console.WriteLine(str3.PadLeft(20,'*'));//Verilen uzunluğa göre sol tarafa ekler.
+
+            string youtubeStr = "Https://www.youtube.com/watch?v=tbCiWKLLjBY";
+            string[] adres = youtubeStr.Split('=');//yazılan ifadeden itibaren ayırır.
+            foreach (var item in adres)
+            {
+                Console.WriteLine(item);
+            }
+
+            string cumle = "Merhaba             arkadaşlar.          Bugün sınav var.";
+            string[] kelimeler = cumle.Split(' ');
+            string cumle2 = String.Join(" ", kelimeler);
+            Console.WriteLine("Cumle2="+cumle2);
+            foreach (var item in kelimeler)
+            {
+                if(item!=""&& item!=" ")
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("Kelime sayısı:" + kelimeSay(cumle));
+
+            string buyuk = "SMARTPRO";
+            string kucuk = "smartpro";
+
+            Console.WriteLine(buyuk.ToLower());
+            Console.WriteLine(kucuk.ToUpper());
+
+            Console.WriteLine(buyuk.Remove(0,1));//Nerden başlıyacak,kaç karakter silecek         
+            Console.WriteLine("buyuk inserted:"+buyuk.Insert(5,"_405_"));
+            Console.WriteLine("buyuk replace:"+buyuk.Replace('P','B'));
+            buyuk = buyuk.Replace('P', 'B');
+            buyuk = buyuk.Replace('O', 'E');
+            Console.WriteLine("buyuk replace:"+buyuk);
+
+            buyuk = buyuk.Replace("SMART", "OSMAN");
+            Console.WriteLine("buyuk replace:"+buyuk);
+
+            Console.WriteLine("Buyuk(0):"+buyuk[0]);
+            Console.WriteLine("buyuk.Length="+buyuk.Length);
+            Console.WriteLine("Ters yaz:"+tersYaz(buyuk));
+            Console.ReadLine();*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /*static int yasHesapla(int dyılı)
+        {
+            int yas = 0;
+            DateTime yıl = new DateTime();
+            yıl = DateTime.Now;
+            yas = yıl.Year - dyılı;
+            return yas;
+        }*/
+
+        /*static int kelimeSay(string cumle)
+        {
+            int toplamKelime = 0;
+            string[] kelimeler = cumle.Split(' ');
+            //return kelimeler.Length;
+            foreach (var item in kelimeler)
+            {
+                if (item != " " && item != "")
+                    toplamKelime++;
+            }
+            return toplamKelime;
+        }
+
+        static string tersYaz(string buyuk)
+        {
+            string ters = " ";
+            for (int i = buyuk.Length-1; i >=0 ; i--)
+            {
+                ters = ters + buyuk[i];
+            }
+            return ters;
+        }*/

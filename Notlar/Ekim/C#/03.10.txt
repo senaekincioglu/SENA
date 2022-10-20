@@ -1,0 +1,220 @@
+/*int sayi = 0;
+            Random random = new Random();
+            List<int> tahminler = new List<int>();
+            sayi = random.Next(0, 1000);
+            for (int i = 0; i < 15; i++)
+            {
+                Console.WriteLine((i + 1) + ".tahmininizi giriniz");
+                int tahmin = Convert.ToInt32(Console.ReadLine());
+                tahminler.Add(tahmin);
+                if (tahmin == sayi)
+                {
+                    Console.WriteLine("Tahmininiz doğru,sayi " + tahmin + "'dir");
+                    break;
+                }
+                else if (tahmin > sayi)
+                    Console.WriteLine("Sayı tahmininden daha küçük bir sayıdır.");
+                else
+                    Console.WriteLine("Sayı tahmininden daha büyük bir sayıdır.");
+            }
+            Console.WriteLine("Tahminleriniz:");
+            foreach (var item in tahminler)
+            {
+                Console.Write(item + " ");
+            }
+            Console.ReadLine();*/
+
+            /*int[] dizi = new int[5];
+            dizi[0] = 66;
+            dizi.SetValue(67, 0);
+            */
+
+            /*string[] sehirler = { "Adana", "Adıyaman", "Afyon", "Ağrı", "Amasya", "Ankara", "Adıyaman" };
+            int AnkaraIndexi = Array.IndexOf(sehirler, "Ankara");
+            Console.WriteLine("Ankara Indexi:"+AnkaraIndexi);
+            int AdiyamanIndexi= Array.IndexOf(sehirler, "Adıyaman");
+            Console.WriteLine("Adıyaman Indexi:" + AdiyamanIndexi);
+            int AdiyamanIndexi2 = Array.IndexOf(sehirler, "Adıyaman", 2);
+            Console.WriteLine("Adıyaman Indexi:" + AdiyamanIndexi);*/
+
+            /*int[] dizi1 = { 11, 41, 21, 32, 43, 54, 65,66,77,86 };
+            int[] dizi2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //dizi1.CopyTo(dizi2, 0);
+            Array.Copy(dizi1, 5, dizi2, 5, 5);
+            foreach (var item in dizi2)
+            {
+                Console.WriteLine(item);
+            }*/
+
+            /*int[,] dizi = new int[2, 3];
+            Random rnd = new Random();
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    int sayi = rnd.Next(0, 15);
+                    dizi[i, j] = sayi;
+                    if (dizi[i, j] < 10)
+                        Console.Write(dizi[i, j] + "  ");
+                    else
+                        Console.Write(dizi[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*int[,] dizi = new int[5, 5];
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (((i == j)|| (i + j == 4))&&(j<3))
+                        dizi[i, j] = 1;
+                    Console.Write(dizi[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*int[,] dizi = new int[5, 5];
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (((i == j) || (i + j == 4)) && (j >=2))
+                        dizi[i, j] = 1;
+                    Console.Write(dizi[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*int[,] dizi = new int[5, 5];
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (i == 0 || i == 4 || j == 0 || j == 4)
+                        dizi[i, j] = 1;
+                    Console.Write(dizi[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*int a = 10;
+            Console.WriteLine(a++);//10
+            Console.WriteLine(a);//11
+            Console.WriteLine(++a);//12
+            Console.WriteLine(a--);//12
+            Console.WriteLine(--a);//10
+            Console.ReadLine();*/
+
+            //Liste Devamı////////
+            /*List<string> sehirler = new List<string>() { "İstanbul", "Manisa", "Van", "Mersin", "Gaziantep", "Şanlıurfa", "Van", "Van" };
+            int elamansayisi = sehirler.Count;
+            Console.WriteLine(elamansayisi);
+            int VanSayisi = sehirler.Count(sehir => sehir == "Van");//Şehir diye bir değişken tanımla Vana eşitse countunu al
+            Console.WriteLine(VanSayisi);
+            sehirler.Remove("İstanbul");
+            sehirler.RemoveAt(6);
+            foreach (var item in sehirler)
+            {
+                Console.WriteLine(item);
+            }
+            bool adanaVarMi = sehirler.Contains("Adana");
+            Console.WriteLine("Adana var mı:" + adanaVarMi);
+            bool mersinVarMi = sehirler.Contains("Mersin");
+            Console.WriteLine("Mersin var mı:"+mersinVarMi);
+            Console.ReadLine();*/
+
+            /*List<string> isimler = new List<string>();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write((i + 1) + ".ismi giriniz:");
+                string isim = Console.ReadLine();
+                isimler.Add(isim);
+            }
+            isimler.Sort();
+            foreach (var item in isimler)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();*/
+
+            /*List<object> karisikListe = new List<object>() { 1, "Veysel Perü", 432, "54232331", true };
+            foreach (var item in karisikListe)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();*/
+            //METOTLAR
+            //Topla(5, 4);
+
+            //kareAl();
+
+            /*string kelime;
+            Console.Write("10 defa yazılacak kelimeyi giriniz:");
+            kelime = Console.ReadLine();
+            Ekrana10DefaYaz(kelime);*/
+
+            //Console.WriteLine(kdvHesapla(35));
+            //Console.WriteLine(kdvHesapla(20, "eğitim"));
+            //Console.WriteLine(Math.Round(kdvHesapla(35,"gıda")));
+
+            /*ToplaYaz(10, 90);
+            int toplam = toplaDondur(22,66);
+            Console.WriteLine("Toplam:" + toplam);
+            Console.ReadLine();*/
+
+
+        }
+
+        /*static int Topla(int s1,int s2)
+{
+   int toplam = s1 + s2;
+   return toplam;
+}*/
+
+        /*static void kareAl()
+        {
+            Console.WriteLine("Karesi alınacak sayıyı giriniz:");
+            int s = Convert.ToInt32(Console.ReadLine());
+            int kare = s * s;
+            Console.WriteLine("Sayının karesi:"+kare);
+            Console.ReadLine();
+        }*/
+
+        /*public static void Ekrana10DefaYaz(string kelime)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(kelime);
+            }
+            Console.ReadLine();
+        }*/
+
+        /*private static double kdvHesapla(double fiyat)
+        {
+            return fiyat * 1.18;
+        }*/
+
+        /*private static double kdvHesapla(double fiyat, string secim)
+        {
+            if (secim == "gıda")
+                return fiyat * 1.18;
+            else if (secim == "eğitim")
+                return fiyat * 1.05;
+            else
+                return fiyat * 1.18;
+        }*/
+      
+        /*static void ToplaYaz(int v1,int v2)
+        {
+            Console.WriteLine("Toplam ="+(v1+v2));
+        }*/
+
+        /*static int toplaDondur(int v1,int v2)
+        {
+            return v1 + v2;
+        }*/

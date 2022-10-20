@@ -1,0 +1,190 @@
+/*string[] isimler = new string[10];
+             for (int i = 0; i < isimler.Length; i++)
+             {
+                 Console.Write((i + 1) + ".ismi giriniz:");
+                 isimler[i] = Console.ReadLine();
+             }
+             int index = 0;
+             foreach(var a in isimler)
+             {
+                 index = Array.IndexOf(isimler,a,index);
+                 Console.WriteLine((index+1)+".isim:"+a);
+                 index++;
+             }
+             Console.ReadLine();*/
+
+            /*int i, j;
+            Random rnd = new Random();
+            int[] sayilar = new int[10];
+            for (i = 0; i < sayilar.Length; i++)
+            {
+                sayilar[i] = rnd.Next(0, 1000);
+            }
+            for (j = 0; j < sayilar.Length; j++)
+            {
+                Console.WriteLine(sayilar[j]);
+            }
+            Console.ReadLine();*/
+
+            /*int[] dizi1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+            int[] dizi2 = { 101, 102, 103, 104, 105, 106, 107, 108, 109,110};
+            Array.Copy(dizi1,2, dizi2,4, 5);
+            for (int j = 0; j < dizi1.Length; j++)
+            {
+                Console.WriteLine(dizi2[j]);
+            }
+            Console.ReadLine();*/
+
+            /*int[,] matrix = new int[2, 4];
+            for (int i = 0; i < 2; i++)
+            {                
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.WriteLine("["+i + "," + j+"]endeksini giriniz:");
+                    matrix[i, j] =Convert.ToInt32(Console.ReadLine());
+                }               
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.Write(matrix[i,j]+" ");                    
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*int[,] matrix = new int[2, 4];
+            for (int i = 0; i < 2; i++)
+            {
+                int toplam = 0;
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.WriteLine("[" + i + "," + j + "]endeksini giriniz:");
+                    matrix[i, j] = Convert.ToInt32(Console.ReadLine());
+                    toplam += matrix[i, j];
+                }
+                matrix[i, 3] = toplam;
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.Write(matrix[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();*/
+
+            /*int[,,] dizi3D = new int[2, 3, 3];
+            Random rnd = new Random();
+            for (int z = 0; z < 2; z++)
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        dizi3D[z, i, j] = rnd.Next(1000);
+                    }
+                }
+            }
+            for (int z = 0; z < 2; z++)
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        Console.Write(dizi3D[z, i, j] + " ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine("***************************************");
+            }
+            Console.ReadLine();*/
+            ////Liste////
+            /*List<int> ilkListem = new List<int>();//Liste;kapasitesi sınırlı değil,otomamtik genişler.
+            List<string> sehirler = new List<string>() { "İstanbul","İzmir","Manisa","Siirt","Adana","Bursa","Mersin" };
+            sehirler.Add("Sivas");//ekleme
+            sehirler.Insert(1,"Kütahya");//araya ekleme
+            foreach (var item in sehirler)
+            {
+                Console.WriteLine(item + " "); 
+            }
+            Console.WriteLine("*************************************");
+            for (int i = 0; i <sehirler.Count; i++)
+            {
+                Console.WriteLine(sehirler[i] + " ");
+            }
+            Console.WriteLine("*************************************");
+            bool sivasKontrol = sehirler.Contains("Sivas");//kontrol etme
+            Console.WriteLine("SivasKontrol:" + sivasKontrol);
+            sehirler.Remove("İstanbul");//çıkarma
+            sehirler.RemoveAt(2);//belirli indexi çıkarma
+            sehirler.Sort();//Alfabetik sıra
+            for (int i = 0; i < sehirler.Count; i++)
+            {
+                Console.WriteLine(sehirler[i] + " ");
+            }
+            Console.WriteLine("*************************************");
+            sehirler.Clear();//silme
+            Console.ReadLine();*/
+
+            /*Random rnd = new Random();
+            List<int> l1 = new List<int>();
+            List<int> l2 = new List<int>();
+            List<int> l3 = new List<int>();
+            for (int i = 0; i < 5; i++)
+            {
+                int sayi = rnd.Next(1, 10);
+                l1.Add(sayi);
+                sayi = rnd.Next(1, 10);
+                l2.Add(sayi);
+            }
+            Console.Write("Liste 1:");
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write(l1[i] + ",");
+            }
+            Console.Write("\n" + "Liste 2:");
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write(l2[i] + ",");
+            }
+            foreach (var a in l1)
+            {
+                if (l2.Contains(a) == false && l3.Contains(a) == false)
+                    l3.Add(a);
+            }
+            Console.Write("\n" + "Liste 3:");
+            foreach (var e in l3)
+            {
+                Console.Write(e + ",");
+            }
+            Console.ReadLine();*/
+
+            /*int tahmin, sayi1;
+            List<int> sayi = new List<int>();
+            Random rnd = new Random();
+            for (int i = 0; i < 15; i++)
+            {
+                sayi1 = rnd.Next(0, 20);
+                sayi.Add(sayi1);
+            }
+            for (int i = 0; i < sayi.Count; i++)
+            {
+                Console.WriteLine(sayi[i] + " ");
+            }
+        giris:
+            Console.WriteLine("Tahmininizi giriniz: ");
+            tahmin = Convert.ToInt32(Console.ReadLine());
+
+            if (sayi.Contains(tahmin))
+            {
+                Console.WriteLine("Tahmininiz listede var." + sayi.IndexOf(tahmin) + "," + sayi.LastIndexOf(tahmin) + ".indexte bulunuyor.");
+            }
+            else
+            {
+                Console.WriteLine("Tahmininiz listede yok.Lütfen tekrar deneyiniz:");
+                goto giris;
+            }
+            Console.ReadLine();*/

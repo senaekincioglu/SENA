@@ -1,0 +1,132 @@
+/*int fakt = 1;
+            Console.WriteLine("Sayı giriniz: ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                fakt *= sayi;
+                sayi--;
+            }
+            while (sayi > 1);
+            Console.WriteLine("Sayının faktoriyeli:" + fakt);
+            Console.ReadLine();*/
+
+            /*int taban, us, sonuc = 1;
+            Console.WriteLine("Tabanı giriniz: ");
+            taban = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Üssü giriniz: ");
+            us = Convert.ToInt32(Console.ReadLine());
+            int üs = us;
+        sonuc:
+            //do
+            //{
+            sonuc *= taban;
+            us--;
+            if (us > 0)
+                goto sonuc;
+            //} while (us > 0);
+            Console.WriteLine(taban + " tabanında " + üs + ":" + sonuc);
+            Console.ReadLine();*/
+
+            /*double sayi, toplam = 0;
+             int gsayi, a = 1;
+             Console.WriteLine("Kaç sayı girilecek:");
+             gsayi = Convert.ToInt32(Console.ReadLine());
+             int asayi = gsayi;
+         giris:
+             Console.WriteLine(a + ".Sayıyı giriniz:");
+             sayi = Convert.ToDouble(Console.ReadLine());
+             if (sayi > 0 && sayi < 100)
+             {
+                 a++;
+                 gsayi--;
+                 toplam += sayi;
+                 if (gsayi > 0)
+                     goto giris;
+             }
+             else
+             {
+                 Console.WriteLine("Hatalı girdiniz.Lütfen 0-100 arasında bir sayı giriniz");
+                 goto giris;
+             }
+             double sonuc = Math.Round(toplam / asayi, 2);
+             Console.WriteLine("Girilen sayıların aritemetik ortalaması:" + sonuc);
+             Console.ReadLine();*/
+
+            /*int sayi=1;
+            int gsayi;
+            Console.WriteLine("Hangi sayıya kadar saysın");
+            gsayi = Convert.ToInt32(Console.ReadLine());
+            while (sayi >= 1 && sayi <= gsayi)
+            {
+                Console.WriteLine(sayi);
+                sayi++;                
+            }
+            Console.ReadLine();*/
+            /* string secim;
+             giris:
+             Console.Write("Mesajınızı yazınız.Çıkmak için kapat yazınız: ");
+             secim = Console.ReadLine();
+             while (secim.ToLower()!= "kapat")
+             {
+                 Console.WriteLine(secim);
+                 goto giris;
+             }
+             Console.ReadLine();*/
+
+            /*string sayi;
+            int toplam = 0, a = 1;
+        giris:
+            Console.WriteLine("Toplanıcak " + a + ".sayıyı giriniz:");
+            sayi = Console.ReadLine();
+
+            while (sayi.ToLower() != "bitir")
+            {
+                a++;
+                int ksayi = Convert.ToInt32(sayi);
+                toplam += ksayi;
+                Console.WriteLine("Çıkmak için bitir yazınız:");
+                goto giris;
+            }
+            Console.WriteLine((a-1) + " sayının toplamı: " + toplam);
+            Console.ReadLine();*/
+
+            /*string sSayi = "34VB5412";
+            bool kontrol = false;
+            int isayi = 0;
+            try
+            {
+                isayi = Convert.ToInt32(sSayi);
+                kontrol = true;
+                Console.WriteLine("Metin formatı düzgün.");
+
+            }
+            catch (System.FormatException)
+            {
+                Console.WriteLine("Metin formatı hatalı!Tip dönüşümü yapılamadı.");
+            }
+            Console.ReadLine();*/
+
+            /*int sayi = 1;
+            while (sayi <= 100)
+            {
+                if (sayi % 2 == 0)
+                {
+                    if (sayi % 3 == 0)
+                    {
+                        Console.WriteLine(sayi + " çifttir ve 3'e bölünebilir ve 3'ün " + (sayi / 3) + " katıdır.");
+                    }
+                    else
+                        Console.WriteLine(sayi + " çifttir.");
+                }
+                else
+                {
+                    if (sayi % 3 == 0)
+                    {
+                        Console.WriteLine(sayi + " tektir ve 3'e bölünebilir ve 3'ün " + (sayi / 3) + " katıdır.");
+                    }
+                    else
+                        Console.WriteLine(sayi + " tektir.");
+                }
+                sayi++;
+            }
+            Console.ReadLine();*/

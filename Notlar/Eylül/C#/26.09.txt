@@ -1,0 +1,118 @@
+ /*double vize, final, ort;
+         giris:
+             Console.WriteLine("Vize notunuzu giriniz: ");
+             vize = Convert.ToDouble(Console.ReadLine());
+             Console.WriteLine("Final notunuzu giriniz: ");
+             final = Convert.ToDouble(Console.ReadLine());
+             ort = (vize * 40) / 100 + (final * 60) / 100;
+             if (ort >= 85 && ort < 101)
+                 Console.WriteLine("Harf notunuz:A"+" Ortalamanız:"+ort);
+             else if (ort >= 75 && ort < 85)
+                 Console.WriteLine("Harf notunuz:B" + " Ortalamanız:" + ort);
+             else if (ort >= 65 && ort < 75)
+                 Console.WriteLine("Harf notunuz:C" + " Ortalamanız:" + ort);
+             else if (ort >= 50 && ort < 65)
+                 Console.WriteLine("Harf notunuz:D" + " Ortalamanız:" + ort);
+             else if (ort > 0 && ort < 50)
+                 Console.WriteLine("Harf notunuz:F" + " Ortalamanız:" + ort);
+             else
+             {
+                 Console.WriteLine("Yanlış not girdiniz");
+                 goto giris;
+             }*/
+            /*double sayi1, sayi2;
+            string islem;
+            Console.WriteLine("Birinci sayıyı giriniz: ");
+            sayi1 = Convert.ToDouble(Console.ReadLine());
+        giris2:
+            Console.WriteLine("İkinci sayıyı giriniz: ");
+            sayi2 = Convert.ToDouble(Console.ReadLine());
+        giris:
+            Console.WriteLine("Yapılacak işlem nedir? 1-Topla 2-Çıkar 3-Böl 4-Çarp");
+            islem = Console.ReadLine();
+            if (islem == "1" || islem == "Topla")
+                Console.WriteLine("Sonuç=" + (sayi1 + sayi2));
+            else if (islem == "2" || islem == "Çıkar")
+                Console.WriteLine("Sonuç=" + (sayi1 - sayi2));
+            else if (islem == "3" || islem == "Böl")
+            {
+                if (sayi2 != 0)
+                {
+
+                    Console.WriteLine("Sonuç=" + (sayi1 / sayi2));
+                }
+                else
+                {
+                    Console.WriteLine("Sonuç 0 olamaz");
+                    goto giris2;
+                }
+            }
+            else if (islem == "4" || islem == "Çarp")
+                Console.WriteLine("Sonuç=" + (sayi1 * sayi2));
+            else
+            {
+                Console.Write("Geçersiz işlem seçtiniz.Lütfen geçerli bir işlem giriniz");
+                goto giris;
+            }
+            Console.ReadLine();*/
+
+
+            /*double sayi, kat;
+
+            Console.WriteLine("Sayı giriniz");
+            sayi = Convert.ToDouble(Console.ReadLine());
+            if (sayi % 2 == 0)
+                Console.WriteLine("Sayı 2'nin katıdır." + sayi);
+            else
+            {
+
+                if (sayi % 3 == 0)
+                    Console.WriteLine("Sayı 3'ün " + (sayi / 3) + " katıdır.");
+                else
+                    Console.WriteLine("Sayının 3'bölümünden kalan: " + sayi % 3);
+            }
+            Console.ReadLine();*/
+            /*int sayi, kacsayi;
+            int psayi = 0;
+            int nsayi = 0;
+            int ntoplam = 0;
+            int ptoplam = 0;
+            int a = 1;
+
+            Console.WriteLine("Kaç sayı gireceksiniz: ");
+            kacsayi = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+            notr:
+                Console.WriteLine(a+".Sayı giriniz:");
+                sayi = Convert.ToInt32(Console.ReadLine());
+                kacsayi--;
+
+                if (sayi > 0)
+                {
+                    psayi++;
+                    ptoplam += sayi;
+
+                }
+                else if (sayi < 0)
+                {
+                    nsayi++;
+                    ntoplam += sayi;
+                }
+                else
+                {
+                    Console.WriteLine("0 nötr sayıdır.Yeniden giriniz.");
+                    goto notr;
+                }
+                a++;
+            } while (kacsayi > 0);
+            Console.WriteLine(psayi + " pozitif sayı var,toplamları: " + ptoplam);
+            Console.WriteLine(nsayi + " negatif sayı var,toplamları: " + ntoplam);
+            Console.ReadLine();*/
+           /* string f;
+            Console.WriteLine("Sıcaklığı fahrenheit cinsinden giriniz.");
+            f = Console.ReadLine();
+            double fa = Convert.ToDouble(f);//stringi double'a çevirme
+            double c = (fa - 32) / 1.8;
+            c = Math.Round(c, 2);//Sayının kaç virgül sonraya yuvarlanacağı
+            Console.WriteLine("Sıcaklık santigirat cindsinden şöyledir." + c);*/
