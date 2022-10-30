@@ -45,7 +45,7 @@ namespace Interface
     interface Ikisi
     {
         int Id { get; set; }
-        String Ad { get; set; }
+        string Ad { get; set; }
         string Soyad { get; set; }
 
 
